@@ -31,7 +31,7 @@ public abstract class MainActivity extends AppCompatActivity {
                         .withBackgroundSelect(R.drawable.back_drawer_select)
                         .withBackgroundNoSelect(R.drawable.back_drawer_no_select)
                         .withTextColorSelect(getResources().getColor(R.color.colorGreenLight))
-                        .withTextColorNoSelect(getResources().getColor(R.color.colorBlackMedium))
+                        .withTextColorNoSelect(getResources().getColor(R.color.colorBlackLight))
                         .withCurrentItem(getCurrentItem())
                         .builder();
 

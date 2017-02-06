@@ -2,6 +2,7 @@ package com.android.navigationview.view;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.*;
 import android.view.View;
 import android.widget.ImageView;
@@ -44,9 +45,10 @@ public class NavigationAdapter extends RecyclerView.Adapter<NavigationAdapter.It
     @Override
     public void onBindViewHolder(ItemDrawerViewHolder holder, int position) {
         if(holder != null){
-            holder.mContentLinearLayout.setBackgroundResource(mItems[position].getBackground());
-            holder.mTitleTextView.setTextColor(mItems[position].getResTitleColor());
+            //holder.mContentLinearLayout.setBackgroundResource(mItems[position].getBackground());
             holder.mTitleTextView.setText(mItems[position].getTitle());
+            holder.mTitleTextView.setTextColor(mItems[position].getResTitleColor());
+            Log.i("dasda :", holder.mTitleTextView.getText().toString());
             holder.mIcoImageView.setImageResource(mItems[position].getIcon());
         }
     }

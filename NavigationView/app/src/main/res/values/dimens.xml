@@ -2,5 +2,7 @@
 <resources>
 
     <dimen name="drawer.width">90dp</dimen>
+    <dimen name="menu.item.image.height">25dp</dimen>
+    <dimen name="menu.item.image.width">30dp</dimen>
 
 </resources>

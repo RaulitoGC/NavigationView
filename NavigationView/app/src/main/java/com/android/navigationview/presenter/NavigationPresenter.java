@@ -26,7 +26,7 @@ public class NavigationPresenter implements Presenter {
         mResBackSelect =  navigationBuilder.getResBackgroundSelect();
         mResBackNoSelect =  navigationBuilder.getResBackgroundNoSelect();
         mResTextColorSelect = navigationBuilder.getResTextColorSelect();
-        mResTextColorNoSelect = navigationBuilder.getResBackgroundNoSelect();
+        mResTextColorNoSelect = navigationBuilder.getResTextColorNoSelect();
     }
 
 
@@ -38,8 +38,8 @@ public class NavigationPresenter implements Presenter {
             NavigationItem item = mItems[i];
             NavigationItemView itemFilter = null;
 
-            if(mCurrrentItem.getId() == mItems[i].getId())itemFilter = new NavigationItemView(item.getItemTitle(),mResBackSelect,item.getItemIconSelected(),mResTextColorSelect);
-            else itemFilter = new NavigationItemView(item.getItemTitle(),mResBackNoSelect,item.getItemIconNoSelected(),mResTextColorNoSelect);
+            if(mCurrrentItem.getId() == mItems[i].getId())itemFilter = new NavigationItemView(item.getItemTitle(),item.getItemIconSelected(),mResBackSelect,mResTextColorSelect);
+            else itemFilter = new NavigationItemView(item.getItemTitle(),item.getItemIconNoSelected(),mResBackNoSelect,mResTextColorNoSelect);
 
             items[i] = itemFilter;
         }

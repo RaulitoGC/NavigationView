@@ -20,16 +20,14 @@
 
         <ImageView
             android:id="@+id/drawer_item_image_view"
-            android:src="@drawable/ic_home"
-            android:layout_width="25dp"
-            android:layout_height="25dp" />
+            android:layout_width="@dimen/menu.item.image.width"
+            android:layout_height="@dimen/menu.item.image.height" />
 
         <TextView
             android:id="@+id/drawer_item_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="asdsasa"
             android:textSize="12sp"/>
 
     </LinearLayout>
